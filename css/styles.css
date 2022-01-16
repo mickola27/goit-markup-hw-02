@@ -1,12 +1,12 @@
 :root {
   --logo-text-color: #000000;
-  --logo-text-color-second: #2196F3;
   --header-text-color: #212121;
   --header-background-color: #FFFFFF;
   --header-text-mail-tel: #757575;
   --accent-color: #2196F3;
   --team-background-color: #F5F4FA;
-  --button-color: #FFFFFF;
+  --button-color: #FFFFFF;         
+  --button-color-accent: #188CE8;
   --hero-color-text: #FFFFFF;
   --title-text-color: #212121;
   --text-color: #757575;
@@ -26,6 +26,7 @@ body {
 /* хедер */
 .header {
   background-color: var(--header-background-color);
+
 }
 .logo {
 font-family: "Raleway", sans-serif;
@@ -44,7 +45,7 @@ font-size: 26px;
 line-height: calc(31 / 26);
 letter-spacing: 0.03em;
 text-decoration: none;
-color: var(--logo-text-color-second);
+color: var(--accent-color);
 }
 
 .header-link {
@@ -55,14 +56,38 @@ letter-spacing: 0.02em;
 text-decoration: none;
 color: var(--header-text-color);
 }
-.header-link-mail, 
-.header-link-tel {
+
+.header-link:hover,
+.header-link:focus {
+font-weight: 500;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.02em;
+color: var(--accent-color);
+}
+
+.header-link-mail {
 font-weight: 500;
 font-size: 14px;
 line-height: calc(16 / 14);
 letter-spacing: 0.02em;
 text-decoration: none;
 color: var(--header-text-mail-tel);
+}
+.header-link-mail:hover,
+.header-link-mail:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.active-page {
+font-weight: 500;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.02em;
+color: var(--button-color-accent);
 }
 
 /* Герой */
@@ -71,8 +96,7 @@ color: var(--header-text-mail-tel);
 
 .hero {
   background-color: var(--footer-background-color);
-  /* width: 1600px;
-  height: 600px; */
+
 }
 
 .hero-title {
@@ -85,12 +109,25 @@ color: var(--hero-color-text);
 
 }
 .hero-btn {
+font-family: inherit;;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
 background-color: var(--accent-color);
 color: var(--button-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  font-family: inherit;;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+background-color: var(--button-color-accent);
+color: var(--button-color);
+
 }
 
 /* Особенности */
@@ -154,6 +191,7 @@ color: var(--text-color);
   background-color: var(--footer-background-color);
 
 }
+
 .footer-logo {
 font-family: "Raleway", sans-serif;
 font-weight: 700;
@@ -173,8 +211,7 @@ text-decoration: none;
 color: var(--footer-color-text);
 }
 
-.footer-link-mail, 
-.footer-link-tel {
+.footer-link-mail {
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -183,15 +220,37 @@ color: var(--footer-color-mail-tel);
 
 }
 
+.footer-link-mail:hover,
+.footer-link-mail:focus {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration: none;
+color: var(--accent-color);
+}
+
 /* портфолио */
 
 .services-btn {
+  font-family: inherit;
 background-color: var(--accent-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
+text-align: center;
 letter-spacing: 0.03em;
 color: var(--button-text-color);
+}
+
+.services-btn:hover,
+.services-btn:focus {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--button-color);
 }
 
 .services-title {
