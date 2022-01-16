@@ -4,150 +4,160 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Хедер -->
-    <header>
-      <a href="https://mickola27.github.io/goit-markup-hw-02/"
-        ><span>Web</span>Studio</a
-      >
-      <nav>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+    <header class="header">
+      <a href="https://mickola27.github.io/goit-markup-hw-02/" class="logo"
+          ><span class="logo-blue">Web</span>Studio</a
+        >
+      <nav class="navigation">
+        
+        <ul class="header-list list">
+          <li class="header-item"><a href="./index.html" class="header-link">Студия</a></li>
+          <li class="header-item"><a href="./portfolio.html" class="header-link">Портфолио</a></li>
+          <li class="header-item"><a href="" class="header-link">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-      <hr />
+      <a href="mailto:info@devstudio.com" class="header-link-mail">info@devstudio.com</a>
+      <a href="tel:+380961111111" class="header-link-tel">+38 096 111 11 11</a>
+      
     </header>
-    <!--Навигация по портфолио-->
-    <main>
-      <section>
-        <h1>Меню портфолио</h1>
-        <ul>
-          <li><a href="">Все</a></li>
-          <li><a href="">Веб-сайты</a></li>
-          <li><a href="">Приложения</a></li>
-          <li><a href="">Дизайн</a></li>
-          <li><a href="">Маркетинг</a></li>
+    <!--Список услуг-->
+    <main >
+      <section class="services section">
+        <h1>Список услуг</h1>
+        <ul class="services-list list">
+          <li class="services-item"><button type="button" class="services-btn">Все</button></li>
+          <li class="services-item"><button type="button" class="services-btn">Веб-сайты</button></li>
+          <li class="services-item"><button type="button" class="services-btn">Приложения</button></li>
+          <li class="services-item"><button type="button" class="services-btn">Дизайн</button></li>
+          <li class="services-item"><button type="button" class="services-btn">Маркетинг</button></li>
         </ul>
-      </section>
-      <!--Список портфолио-->
-      <section>
-        <h2>Список портфолио</h2>
-        <ul>
-          <li>
-            <a href="">
+        <ul class="services-all-list list">
+          <li class="services-all-item">
+            <a href="" class="services-link">
               <img
                 src="./images/portfolio-img1.jpg"
                 alt="веб сайт Технокряк"
                 width="370"
                 height="294"
+                class="services-img"
               />
-              <h3>Технокряк</h3>
-              <p>Веб-сайт</p>
+              <h2 class="services-title">Технокряк</h2>
+              <p class="services-text">Веб-сайт</p>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="services-all-item">
+            <a href="" class="services-link">
               <img
                 src="./images/portfolio-img2.jpg"
                 alt="Постер Нового Орлеана"
                 width="370"
                 height="294"
+                class="services-img"
               />
-              <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-              <p>Дизайн</p>
+              <h2 class="services-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+              <p class="services-text">Дизайн</p>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="services-all-item">
+            <a href="" class="services-link">
               <img
                 src="./images/portfolio-img3.jpg"
                 alt="Ресторан морской еды"
                 width="370"
                 height="294"
+                class="services-img"
               />
-              <h3>Ресторан <span lang="en">Seafood</span></h3>
-              <p>Приложение</p>
+              <h2 class="services-title">Ресторан <span lang="en">Seafood</span></h2>
+              <p class="services-text">Приложение</p>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="services-all-item">
+            <a href="" class="services-link">
               <img
                 src="./images/portfolio-img4.jpg"
                 alt="проект прайм"
                 width="370"
                 height="294"
+                class="services-img"
               />
-              <h3>Проект <span lang="en">Prime</span></h3>
-              <p>Маркетинг</p>
+              <h2 class="services-title">Проект <span lang="en">Prime</span></h2>
+              <p class="services-text">Маркетинг</p>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="services-all-item">
+            <a href="" class="services-link">
               <img
                 src="./images/portfolio-img5.jpg"
                 alt="проект боксу"
                 width="370"
                 height="294"
+                class="services-img"
               />
-              <h3>Проект <span lang="en">Boxes</span></h3>
-              <p>Приложение</p>
+              <h2 class="services-title">Проект <span lang="en">Boxes</span></h2>
+              <p class="services-text">Приложение</p>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="services-all-item">
+            <a href="" class="services-link">
               <img
                 src="./images/portfolio-img6.jpg"
                 alt="проект веб-сайту"
                 width="370"
                 height="294"
+                class="services-img"
               />
-              <h3 lang="en">Inspiration has no Borders</h3>
-              <p>Веб-сайт</p>
+              <h2 lang="en" class="services-title">Inspiration has no Borders</h2>
+              <p class="services-text">Веб-сайт</p>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="services-all-item">
+            <a href="" class="services-link">
               <img
                 src="./images/portfolio-img7.jpg"
                 alt="Дизайн издания"
                 width="370"
                 height="294"
+                class="services-img"
               />
-              <h3>Издание <span lang="en">Limited Edition</span></h3>
-              <p>Дизайн</p>
+              <h2 class="services-title">Издание <span lang="en">Limited Edition</span></h2>
+              <p class="services-text">Дизайн</p>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="services-all-item">
+            <a href="" class="services-link">
               <img
                 src="./images/portfolio-img8.jpg"
                 alt="проект ЛАБ"
                 width="370"
                 height="294"
+                class="services-img"
               />
-              <h3>Проект <span lang="en">LAB</span></h3>
-              <p>Маркетинг</p>
+              <h2 class="services-title">Проект <span lang="en">LAB</span></h2>
+              <p class="services-text">Маркетинг</p>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="services-all-item">
+            <a href="" class="services-link">
               <img
                 src="./images/portfolio-img9.jpg"
                 alt="проект ЛАБ"
                 width="370"
                 height="294"
+                class="services-img"
               />
-              <h3 lang="en">Growing Business</h3>
-              <p>Приложение</p>
+              <h2 lang="en" class="services-title">Growing Business</h2>
+              <p class="services-text">Приложение</p>
             </a>
           </li>
         </ul>
@@ -155,15 +165,15 @@
     </main>
 
     <!-- подвал -->
-    <footer>
-      <a href="https://mickola27.github.io/goit-markup-hw-02/"
+    <footer class="footer section">
+      <a href="https://mickola27.github.io/goit-markup-hw-02/" class="footer-logo"
         ><span>Web</span>Studio</a
       >
-      <address>
-        <ul>
-          <li>г. Киев, пр-т Леси Украинки, 26</li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <address class="footer-address">
+        <ul class="footer-list list">
+          <li class="footer-item">г. Киев, пр-т Леси Украинки, 26</li>
+          <li class="footer-item"><a href="mailto:info@devstudio.com" class="footer-link-mail">info@devstudio.com</a></li>
+          <li class="footer-item"><a href="tel:+380961111111" class="footer-link-tel">+38 096 111 11 11</a></li>
         </ul>
       </address>
     </footer>
